@@ -2,7 +2,7 @@ var fs = require("fs");
 var path = require("path");
 
 fs.readdir("./lib", function (err, files) {
-  files.forEach(function (filename) {
+  files.forEach(function (fileName) {
 
     var file = path.join(__dirname, "lib", fileName);
     var stats = fs.statSync(file);
